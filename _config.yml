@@ -4,23 +4,26 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "胡杨的个人博客"
+headline: "Air沙鸥"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   博学笃志 格物明德 
+   ———— 我想，我不只是个程序员
+   
 
-email: a-mail@mail.mail
+email: ihuyang@hotmail.com
 #blog logo
 logo: "/assets/images/df_logo.jpg"
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
+name: 'Hu Yang'
+author: 'Hu Yang'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "https://ihuyang.github.io/myblog" # the base hostname & protocol for your site
+url: "http://ihuyang.me" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
