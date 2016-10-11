@@ -13,12 +13,13 @@ description: > # this means to ignore newlines until "email:"
 
 email: ihuyang@hotmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.jpg"
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/index_bgimg.jpg"
 
 name: 'Hu Yang'
-author: 'Hu Yang'
+author_en: 'Hu Yang'
+author_cn: '胡杨'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
