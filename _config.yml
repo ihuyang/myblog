@@ -6,9 +6,9 @@ gems:
 # Site settings
 title: "胡杨的个人博客"
 headline: "Air沙鸥"
-description:  # this means to ignore newlines until "email:"
-   "博学笃志 格物明德
-   ———— 我想，我不只是个程序员"
+description: > # this means to ignore newlines until "email:"
+   博学笃志 格物明德 
+   ———— 我想，我不只是个程序员
    
 
 email: ihuyang@hotmail.com
