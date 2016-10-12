@@ -47,9 +47,6 @@
         <br>
         {% endif %}
         <section class="post-content">
-          <div class="post-reading">
-            <span class="post-reading-time"></span> read
-          </div>
           <a name="topofpage"></a>
           {{content}}
         </section>
@@ -81,7 +78,7 @@
           <div class="isRight">
             <h5 class="index-headline featured"><span>Contact me</span></h5>
             <footer class="site-footer">
-              <section class="poweredby">Email:&nbsp;&nbsp;{{ site.email }}</section>
+              <section class="poweredby">Email:&nbsp;&nbsp;{{ site.email }}<br>Weibo:&nbsp;&nbsp;{{ site.weibo }}</section>
               <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> RSS订阅</span></a>
               <div class="inner">
                 <section class="copyright">All content copyright <a href="mailto:{{ site.email }}">{{ site.author_en }}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
