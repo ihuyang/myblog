@@ -11,15 +11,15 @@ description: > # this means to ignore newlines until "email:"
    ———— 我想，我不只是个程序员
    
 
-email: ihuyang@hotmail.com
+email: "ihuyang@hotmail.com"
 #blog logo
 logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "/assets/images/index_bgimg.jpg"
 
-name: 'Hu Yang'
-author_en: 'Hu Yang'
-author_cn: '胡杨'
+name: "Hu Yang"
+author_en: "Hu Yang"
+author_cn: "胡杨"
 author_info: "中国&nbsp;上海市&nbsp;&nbsp;&nbsp;&nbsp;25岁"
 author_image: "/assets/images/author.jpg"
 
