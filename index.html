@@ -14,6 +14,10 @@ layout: default
     {% endif %}
     <h1 class="blog-title">{{ site.headline }}</h1>
     <h2 class="blog-description">{{ site.description }}</h2>
+	<div id="jiathis_style">
+		<a class="jiathis_follow_tsina" rel="http://weibo.com/airhy"></a>
+		<a class="jiathis_follow_weixin" rel="{{ site.wechat_code }}"></a>
+	</div>
     <div class="custom-links">
       <!--{% for social in site.social %}
         {% if social.url %}
@@ -23,10 +27,6 @@ layout: default
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %}-->
-		<div id="jiathis_style">
-			<a class="jiathis_follow_tsina" rel="http://weibo.com/airhy"></a>
-			<a class="jiathis_follow_weixin" rel="{{ site.wechat_code }}"></a>
-		</div>
         <a href="/about/">About</a>
     </div>
 </header>
