@@ -17,6 +17,7 @@ weibo: "@huhu_Lucky"
 logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "/assets/images/index_bgimg.jpg"
+wechat_code: "/assets/images/wechat_code.JPG"
 
 name: "Hu Yang"
 author_en: "Hu Yang"

@@ -15,15 +15,19 @@ layout: default
     <h1 class="blog-title">{{ site.headline }}</h1>
     <h2 class="blog-description">{{ site.description }}</h2>
     <div class="custom-links">
-      {% for social in site.social %}
+      <!--{% for social in site.social %}
         {% if social.url %}
             <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
               <i class="fa fa-{{ social.icon }}"></i>
             </a>
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
-      {% endfor %}
-      <a href="/about/">About</a>
+      {% endfor %}-->
+		<div id="jiathis_style">
+			<a class="jiathis_follow_tsina" rel="http://weibo.com/airhy"></a>
+			<a class="jiathis_follow_weixin" rel="{{ site.wechat_code }}"></a>
+		</div>
+        <a href="/about/">About</a>
     </div>
 </header>
 
@@ -93,3 +97,4 @@ layout: default
     {{pagination}} -->
 
 </main>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
