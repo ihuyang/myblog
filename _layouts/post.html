@@ -50,21 +50,11 @@
           <a name="topofpage"></a>
           {{content}}
         </section>
-        <!--<footer class="post-footer">
-          <section class="share">
-            {% for social in site.social %}
-              {% if social.share_url != null %}
-                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.url}}{{page.id}}"
-                  onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-                <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
-                </a>
-              {% endif %}
-            {% endfor %}
-          </section>
-        </footer>-->
-		<div class="jiathis_style_32x32" style="float:right">
+		<div class="jiathis_style_32x32">
 			<a class="jiathis_button_tsina"></a>
-			<a class="jiathis_button_weixin"></a>
+			<a class="jiathis_button_fav"></a>
+			<a class="jiathis_button_copy"></a>
+			<a class="jiathis_button_qzone"></a>
 			<a class="jiathis_counter_style"></a>
 		</div>
         <div class="bottom-teaser cf">
@@ -121,14 +111,11 @@
     {% include javascripts.html %}
 	<script type="text/javascript" >
 		var jiathis_config={
-			siteNum:3,
-			sm:"fav,tsina,weixin",
 			summary:"",
-			boldNum:3,
 			shortUrl:false,
 			hideMore:true
-		}
+	}
 	</script>
-	<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
   </body>
 </html>
