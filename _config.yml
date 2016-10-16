@@ -18,8 +18,6 @@ logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "/assets/images/index_bgimg.jpg"
 wechat_code: "/assets/images/wechat_code.JPG"
-weibo_img: "/assets/images/weibo.png"
-wechat_img: "/assets/images/wechat.png"
 
 name: "Hu Yang"
 author_en: "Hu Yang"
@@ -34,24 +32,14 @@ baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
 
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
 
-# social icons and sharing options
-social:
 #weibo
-  - icon:	"/assets/images/weibo.png"
-    url:	"http://weibo.com/airhy"
-    desc: "关注微博"
-    share_url:
-    share_title:
-    share_link:
+weibo_icon:	"/assets/images/weibo.png"
+weibo_url:	"http://weibo.com/airhy"
+weibo_desc: "关注微博"
 
 #wechat
-  - icon:	"/assets/images/wechat.png"
-    url:	"/assets/images/wechat_code.JPG"
-    desc:	"加我微信"
-    share_url:
-    share_title:
-    share_link:
+wechat_icon: "/assets/images/wechat.png"
+wechat_url:	"/assets/images/wechat_code.JPG"
+wechat_desc: "加我微信"
 

@@ -15,14 +15,15 @@ layout: default
     <h1 class="blog-title">{{ site.headline }}</h1>
     <h2 class="blog-description">{{ site.description }}</h2>
     <div class="custom-links">
-		{% for social in site.social %}
-			{% if social.url %}
-				<a href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
-					<img src="{{ social.icon }}">
-				</a>
-				&nbsp;&nbsp;·&nbsp;&nbsp;
-			{% endif %}
-		{% endfor %}
+		<a href="{{ site.weibo_url }}" title="{{ site.weibo_desc }}">
+			<img src="{{ site.weibo_icon }}">
+		</a>
+		&nbsp;&nbsp;·&nbsp;&nbsp;
+		<a id="wechatcode" href="{{ site.wechat_url }}" title="{{ site.wechat_desc }}">
+			<img src="{{ site.wechat_icon }}">
+		</a>
+		&nbsp;&nbsp;·&nbsp;&nbsp;
+		<a href="/about/">About</a>
 	  	<!--
 		class="icon-{{ social.icon }}"
 		<i class="fa fa-{{ social.icon }}"></i>
@@ -30,7 +31,6 @@ layout: default
 			<a class="jiathis_follow_tsina" rel="http://weibo.com/airhy"></a>
 			<a class="jiathis_follow_weixin" rel="{{ site.wechat_code }}"></a>
 		</div>-->
-        <a href="/about/">About</a>
     </div>
 </header>
 
@@ -100,4 +100,11 @@ layout: default
     {{pagination}} -->
 
 </main>
-<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+	$("#wechatcode").fancybox({
+	    'transitionIn'	: 'elastic',
+		'transitionOut'	: 'elastic',
+		'titlePosition' : 'inside'
+	});
+</script>
