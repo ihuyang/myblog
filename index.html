@@ -17,13 +17,14 @@ layout: default
     <div class="custom-links">
 		{% for social in site.social %}
 			{% if social.url %}
-				<a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
+				<a href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
 					<img src="{{ site.weibo_img }}">
 				</a>
 				&nbsp;&nbsp;·&nbsp;&nbsp;
 			{% endif %}
 		{% endfor %}
 	  	<!--
+		class="icon-{{ social.icon }}"
 		<i class="fa fa-{{ social.icon }}"></i>
 		<div class="jiathis_style" style="margin：0px auto;">
 			<a class="jiathis_follow_tsina" rel="http://weibo.com/airhy"></a>
