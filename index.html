@@ -18,7 +18,7 @@ layout: default
 		{% for social in site.social %}
 			{% if social.url %}
 				<a href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
-					<img src="{{ site.weibo_img }}">
+					<img src="{{ social.icon }}">
 				</a>
 				&nbsp;&nbsp;·&nbsp;&nbsp;
 			{% endif %}

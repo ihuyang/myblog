@@ -19,6 +19,7 @@ logo: "/assets/images/logo.jpg"
 cover: "/assets/images/index_bgimg.jpg"
 wechat_code: "/assets/images/wechat_code.JPG"
 weibo_img: "/assets/images/weibo.png"
+wechat_img: "/assets/images/wechat.png"
 
 name: "Hu Yang"
 author_en: "Hu Yang"
@@ -38,16 +39,18 @@ twitter_handle: '@dirkfabisch'
 
 # social icons and sharing options
 social:
-  - icon:	twitter
-    url:	http://weibo.com/airhy
-    desc: 关注我微博
+#weibo
+  - icon:	"/assets/images/weibo.png"
+    url:	"http://weibo.com/airhy"
+    desc: "关注微博"
     share_url:
     share_title:
     share_link:
 
-  - icon:	github
-    url:	https://github.com/dirkfabisch
-    desc:	Fork me on github
+#wechat
+  - icon:	"/assets/images/wechat.png"
+    url:	"/assets/images/wechat_code.JPG"
+    desc:	"加我微信"
     share_url:
     share_title:
     share_link:
