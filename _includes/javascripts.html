@@ -1,3 +1,4 @@
+<script type="text/javascript" src="/assets/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="/assets/js/index.js"></script>
 <script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
@@ -36,7 +37,22 @@
           }
         }
       });
+	
+	$(".fancybox").fancybox({
+		padding: 0,
 
+		openEffect : 'elastic',
+		openSpeed  : 150,
+
+		closeEffect : 'elastic',
+		closeSpeed  : 150,
+
+		closeClick : true,
+
+		helpers : {
+			overlay : null
+		}
+	});
   });
 }(jQuery));
 </script>
