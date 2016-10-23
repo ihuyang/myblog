@@ -29,8 +29,8 @@ paginate:	5
 
 url: "http://ihuyang.me" # the base hostname & protocol for your site
 baseurl: ""
-#设置博文解析格式
-permalink: /:categories/:urlname.html
+#设置博文的url格式
+permalink: /:categories/:title.html
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "内存缓存的一种典型实现"
-urlname: "A typical implementation of memory cache"
 date:   2016-09-24 22:00:00
 categories: java web
 tags: featured
