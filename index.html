@@ -31,7 +31,7 @@ layout: default
 <main class="content" role="main">
 
     {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
+    <h5 class="index-headline featured"><span>最近更新</span></h5>
 
     <div class="container featured">
       {% for post in site.tags.featured %}
@@ -52,7 +52,7 @@ layout: default
       {% endfor %}
     </div>
 
-    <h5 class="index-headline normal"><span>Regular</span></h5>
+    <h5 class="index-headline normal"><span>历史文章</span></h5>
     {% endif %}
 
     <div class="cf frame">
