@@ -4,8 +4,8 @@ title:  "内存缓存的一种典型实现"
 date:   2016-09-24 22:00:00
 categories: java web
 tags: featured
-image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
-image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+image: /assets/article_images/2016-09-24-A typical implementation of memory cache/night-track.JPG
+image2: /assets/article_images/2016-09-24-A typical implementation of memory cache/night-track-mobile.JPG
 ---
 ### *摘要*
 >　　缓存技术作为一种可以有效加快数据读取速度的机制，被广泛应用于各类应用场景中，以提高运行效率，比如CPU寄存器的指令缓存、数据库缓存等等。在我之前的一项工作里，我需要在程序中随时读取整个项目的数据字典，而数据字典与其他数据一样存储于数据库中，频繁读写消耗大，因此我选择了内存缓存的方式去实现这个需求。
@@ -20,6 +20,7 @@ image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.J
 * **非永久存储**　　缓存是数据存储的缓冲区，仅仅起到临时缓冲数据的作用，有效期一般是程序运行期间或者更短，而不像文件或者磁盘可以长久的保留数据。
 * **存在时效性问题**　　如果存放在缓存中的数据对应于原存储介质中的部分发生了改变，那么我们读取缓存时可能拿到的就不再是最新的数据，这一点是我们使用缓存时的重要考量，时效性要求高的数据并不适合使用缓存。而常见的应对策略是定期从原介质更新缓存中的数据，周期可以由程序的需求来决定。
 
+# *2. 内存缓存的实现* #
 　　在接下来介绍的应用场景里，我使用内存作为缓存去存储程序中的数据字典信息。简单说明一下原因。我所使用到的数据字典是对我项目中涉及到的元素进行的定义和说明，起到目录的作用，是程序运行过程中不会发生改变（若需要改变往往是项目版本更新的时候）但又频繁访问的数据，而使用内存缓存数据字典将比每次都访问数据库（即磁盘）快上不少，也减轻了数据库的压力。这种需求的实现方式很多，我将在下面贴出我所采用的比较典型的一种，可以根据项目的不同需求做调整。
 
 > *Cache.java*
