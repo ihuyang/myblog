@@ -4,8 +4,8 @@ title:  "Java开发中的编码研究"
 date:   2016-10-06 21:00:00
 categories: java web
 tags: featured
-image: /assets/article_images/2016-10-06-Research on coding in java development/desktop.JPG
-image2: /assets/article_images/2016-10-06-Research on coding in java development/desktop.JPG
+image: /assets/article_images/2016-10-06/desktop.JPG
+image2: /assets/article_images/2016-10-06/desktop.JPG
 ---
 ### *摘要*
 >　　对于每一个程序员来说，相信编码这个概念都不会陌生，因为无论使用何种开发语言都或多或少会涉及到编码，只是需要考虑的程度有所区别而已。尽管非常的重要且基础，但它也特别容易在实际的开发过程中被忽视，由此带来的问题也一直困扰着开发人员。乱码就是这些问题的代表，相信所有的程序员都被乱码折磨过吧。
