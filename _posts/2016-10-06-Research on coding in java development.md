@@ -46,7 +46,7 @@ image2: /assets/article_images/2016-10-06/desktop.JPG
 
 　　在前文中我有提到，乱码是最为困扰程序员的问题之一，了解乱码的真正原因可以帮助我们在项目中有效地有意识地避免乱码。所以，我们为什么会在计算机中遇到乱码？在这里，我想通过一段程序的运行结果，去帮助我们看清乱码的本质。
 
-> CodeTypeCompare.java
+> *CodeTypeCompare.java*
 
 	package com.ihuyang.demo;
 	
