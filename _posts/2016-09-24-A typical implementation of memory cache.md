@@ -13,6 +13,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 >　　在本文中，我将针对这个应用场景对内存缓存的一种实现方式进行介绍，如果你对该方面内容感兴趣，可以继续阅读下文。
 
 # *1. 缓存技术* #
+
 　　**缓存**，其本质依然是一种存储数据的介质，以数据缓冲区的形式存在，但它往往具备比正常存储器更快的数据读写速度，这种关系就像是寄存器与内存，或者说是内存与磁盘。而缓存的特点也决定了我们使用它的原因，即提高程序运行的效率。在比较典型的缓存应用场景里，我们会在第一次读取数据的时候，将数据同时存放在缓存中，之后如果读取相同的数据就可以直接从缓存获取，而不是访问原本的介质。下面我总结了缓存的几个关键特点，了解这些特点有助于我们判断什么时候该去使用缓存，需要时又该怎样去实现缓存。
 
 * **更快的数据读写速度**　　这点在前文中已经提到，也是我们使用缓存的最主要原因，它的这个特点可以为我们的程序带来更快的运行速度，减小原有存储介质的负担。
@@ -21,6 +22,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 * **存在时效性问题**　　如果存放在缓存中的数据对应于原存储介质中的部分发生了改变，那么我们读取缓存时可能拿到的就不再是最新的数据，这一点是我们使用缓存时的重要考量，时效性要求高的数据并不适合使用缓存。而常见的应对策略是定期从原介质更新缓存中的数据，周期可以由程序的需求来决定。
 
 # *2. 内存缓存的实现* #
+
 　　在接下来介绍的应用场景里，我使用内存作为缓存去存储程序中的数据字典信息。简单说明一下原因。我所使用到的数据字典是对我项目中涉及到的元素进行的定义和说明，起到目录的作用，是程序运行过程中不会发生改变（若需要改变往往是项目版本更新的时候）但又频繁访问的数据，而使用内存缓存数据字典将比每次都访问数据库（即磁盘）快上不少，也减轻了数据库的压力。这种需求的实现方式很多，我将在下面贴出我所采用的比较典型的一种，可以根据项目的不同需求做调整。
 
 > *Cache.java*
@@ -30,7 +32,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 	/** 
 	 * 缓存接口
 	 * @author huyang
-	 * @version 创建时间：2016-10-21
+	 * @version 创建时间：2016-09-22
 	 */
 	public interface Cache {
 		
@@ -78,7 +80,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 	/**
 	 * 缓存接口实现类
 	 * @author huyang
-	 * @version 创建时间：2016-10-21
+	 * @version 创建时间：2016-09-22
 	 */
 	public class CacheImpl implements Cache {
 	
@@ -129,7 +131,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 	/**
 	 * 缓存工具类
 	 * @author huyang
-	 * @version 创建时间：2016-10-21
+	 * @version 创建时间：2016-09-22
 	 */
 	public class CacheUtils {
 		private static Cache cache;
@@ -192,7 +194,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 	/**
 	 * 向系统提供数据缓存的服务
 	 * @author huyang
-	 * @version 创建时间：2016-10-21
+	 * @version 创建时间：2016-09-22
 	 */
 	public class DataCache {
 	
@@ -259,7 +261,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 		}
 	}
 
-　　我在程序的其他代码中对缓存的所有操作，都是通过DataCache类来完成的，比如我调用getDictList的两个重载方法使用缓存中的数据字典。但使用DataCache类之前首先需要初始化，可以是第一次使用的时候，也可以是服务器启动的时候，对于服务器启动的情况，如果使用了Spring框架，可以通过如下代码在加载bean的时候完成。
+　　我在程序中所有对缓存的操作，都是通过DataCache类来完成的，比如我调用getDictList的两个重载方法使用缓存中的数据字典。但使用DataCache类之前首先需要初始化，可以是第一次使用的时候，也可以是服务器启动的时候，对于服务器启动的情况，如果使用了Spring框架，可以通过如下代码在加载bean的时候完成。
 
 	<bean id="serverInit" class="com.ihuyang.cache.ServerInit" init-method="init"/>
 
