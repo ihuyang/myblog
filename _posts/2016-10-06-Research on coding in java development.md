@@ -100,4 +100,4 @@ image2: /assets/article_images/2016-10-06/desktop.JPG
 
 　　首先我要先说明Java中实现字符字节互换的两个重要方法，它们在这段程序中反复被调用。一个是String类的getBytes(String charsetName)方法，返回值是字符串使用参数指定的编码格式编码后的字节数组。另一个与之相对，是String类的构造方法之一new String(byte[] bytes, String charsetName)，它会构造一个字符串，是参数中的字节数组使用指定编码格式解码后的结果。接下来，让我们看看这段程序的运行结果：
 
-![不同编码格式的编解码测试](/assets/article_images/2016-10-06/2016-10-06_3.jpg "不同编码格式的编解码测试")
+![不同编码格式的编解码测试](/assets/article_images/2016-10-06/2016-10-06_3.png "不同编码格式的编解码测试")
