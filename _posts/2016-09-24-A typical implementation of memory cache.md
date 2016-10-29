@@ -172,6 +172,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 			cache.clear();
 		}
 	}
+
 　　这里之所以创建工具类CacheUtil，将Cache类封装起来，而不是直接在程序中使用Cache类，是因为可以在CacheUtils类中声明更多复杂的缓存操作逻辑，以满足应用特别的需求变化。
 
 　　到这里，内存缓存的基础代码已完成，可以直接套用到各类项目中。接下来就是根据应用的实际情况去初始化缓存、读取缓存以及更新缓存了。下面的DataCache.java是我在实现数据字典缓存时的代码，可供参考。
@@ -257,6 +258,7 @@ image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 			return null;
 		}
 	}
+
 　　我在程序的其他代码中对缓存的所有操作，都是通过DataCache类来完成的，比如我调用getDictList的两个重载方法使用缓存中的数据字典。但使用DataCache类之前首先需要初始化，可以是第一次使用的时候，也可以是服务器启动的时候，对于服务器启动的情况，如果使用了Spring框架，可以通过如下代码在加载bean的时候完成。
 
 	<bean id="serverInit" class="com.ihuyang.cache.ServerInit" init-method="init"/>
