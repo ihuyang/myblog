@@ -219,7 +219,7 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 
 　　可以通过JoinPoint的getArgs()获取,返回的Object[]就是方法的参数数组，通过数组下标能够逐一访问到各个参数。
 
-	Object[] params = joinPoint.getArgs();`
+	Object[] params = joinPoint.getArgs();
 
 <br>
 <br>
