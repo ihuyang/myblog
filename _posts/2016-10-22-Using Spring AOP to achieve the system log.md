@@ -129,7 +129,7 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 
 　　其次就是切入点的定义，它拥有一定的语法要求。首先execution()是表达式的主体，括号内是具体的范围定义，第一个“\*”的位置定义返回类型，“\*”匹配所有的返回类型。接下来的空格后就是需要匹配的包路径，后面的两个“..”代表匹配该路径下所有的子包和更深层级的包。第二个“\*”的位置定义类名，“\*”匹配当前包路径下的所有类。接下来“\*(..)”的位置定义方法名，“\*”匹配当前类下的所有方法，而括号里的“..”匹配当前方法的任意参数。现在我们可以重新看看代码中的切入点定义，“execution(* com.ihuyang.sevice..\*.\*(..))”代表切入点匹配的是com.ihuyang.sevice路径下所有类中的所有方法，而后面的“!execution(* com.ihuyang.service.SystemLogService.*(..))”代表切入点不匹配SystemLogService类下的所有方法。这里之所以需要排除掉这些方法，是因为这些方法会在我们的通知中被调用，如果它本身还可以被切入的话，就会造成切面切入的无限循环，无法退出。
 
-　　最后，在上面的代码中，我只展示了@AfterThrowing和@AfterReturning两类通知，除此之外还有@Before（代表前置通知），@After（代表后置通知）以及@Around（环绕通知），它们的用法与@AfterReturning类似，有关定义也在上文中有所介绍。
+　　最后，在上面的代码中，我只展示了@AfterThrowing和@AfterReturning两类通知，除此之外还有@Before（前置通知），@After（后置通知）以及@Around（环绕通知），它们的用法与@AfterReturning类似，有关定义也在上文中有所介绍。
 
 　　通过以上代码，我们就已经实现了日志管理的功能，但在实际的开发中，我们还可以通过自定义注解的方式为我们切入的方法添加更多信息，这些信息可以在通知中获取到并记入日志。下面的ServiceLog就是我自定义的一个注解，它通过修饰方法为其添加自定义信息。
 
@@ -206,9 +206,8 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 
 * **获取当前切入的类和方法**
 
-`Class targetClass = joinPoint.getTarget().getClass();`
-
-`Method method = ((MethodSignature)joinPoint.getSignature()).getMethod();`
+	Class targetClass = joinPoint.getTarget().getClass();
+	Method method = ((MethodSignature)joinPoint.getSignature()).getMethod();
 
 　　这里顺便提一下，当我们通过反射获取到method后，就可以通过它拿到我们自定义的注解了，代码如下:
 
@@ -216,7 +215,7 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 
 * **获取当前切入方法的调用参数**
 
-`Object[] params = joinPoint.getArgs();`
+	Object[] params = joinPoint.getArgs();`
 
 　　这里的Object[]就是方法的参数数组，可以通过数组下标逐一访问到各个参数。
 <br>
