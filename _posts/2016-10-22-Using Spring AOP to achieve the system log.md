@@ -206,6 +206,8 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 
 * **获取当前切入的类和方法**
 
+　　可以通过JoinPoint的getTarget()和getSignature()获取：
+
 	Class targetClass = joinPoint.getTarget().getClass();
 	Method method = ((MethodSignature)joinPoint.getSignature()).getMethod();
 
@@ -215,9 +217,10 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 
 * **获取当前切入方法的调用参数**
 
+　　可以通过JoinPoint的getArgs()获取,返回的Object[]就是方法的参数数组，通过数组下标能够逐一访问到各个参数。
+
 	Object[] params = joinPoint.getArgs();`
 
-　　这里的Object[]就是方法的参数数组，可以通过数组下标逐一访问到各个参数。
 <br>
 <br>
 <br>
