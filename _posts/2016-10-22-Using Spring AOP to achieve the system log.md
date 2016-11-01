@@ -207,6 +207,7 @@ image2: /assets/article_images/2016-10-22/title_img.jpg
 * **获取当前切入的类和方法**
 
 `Class targetClass = joinPoint.getTarget().getClass();`
+
 `Method method = ((MethodSignature)joinPoint.getSignature()).getMethod();`
 
 　　这里顺便提一下，当我们通过反射获取到method后，就可以通过它拿到我们自定义的注解了，代码如下:
