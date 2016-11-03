@@ -272,4 +272,4 @@ image2: /assets/article_images/2016-09-24/2016-09-24_desktop.jpg
 
 >若需转载此文，请注明作者和原文地址。未经本人同意，本文不允许任何人任何形式的商业使用。如有疑问，请联系本人，联系方式详见本页末尾。
 <br>
->原文地址：[胡杨的个人博客-《内存缓存的一种简单实现》（2016.09.24）](http://ihuyang.me/java/web/A-typical-implementation-of-memory-cache.html)
+>原文地址：[胡杨的个人博客-《内存缓存的一种典型实现》（2016.09.24）](http://ihuyang.me/java/web/A-typical-implementation-of-memory-cache.html)
