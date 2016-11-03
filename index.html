@@ -23,9 +23,29 @@ layout: default
 			<img src="{{ site.wechat_icon }}">
 		</a>
 		&nbsp;&nbsp;·&nbsp;&nbsp;
-		<a class="fancybox fancybox.iframe" href="page.html">About</a>
+		<a class="fancybox" href="#inline1">About</a>
     </div>
 </header>
+
+<div id="inline1" style="width:400px;display: none;">
+		  <div class="bottom-teaser cf">
+		  <div class="isLeft">
+		    <section class="author">
+              <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
+              <h4>{{ site.author_cn }}&nbsp;{{ site.author_en }}</h4>
+			  <br/>
+              <p class="bio">{{site.author_info}}</p>
+              <hr>
+            </section>
+		  </div>
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Contact me</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Email:&nbsp;&nbsp;{{ site.email }}<br>Weibo:&nbsp;&nbsp;{{ site.weibo }}</section>
+            </footer>
+          </div>
+		  </div>
+</div>
 
 
 <main class="content" role="main">
