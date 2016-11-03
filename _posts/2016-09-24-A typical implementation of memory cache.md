@@ -3,7 +3,6 @@ layout: post
 title:  "内存缓存的一种典型实现"
 date:   2016-09-24 22:00:00
 categories: java web
-tags: featured
 image: /assets/article_images/2016-09-24/night-track.JPG
 image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
 ---

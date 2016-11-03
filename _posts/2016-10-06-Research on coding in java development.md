@@ -3,7 +3,6 @@ layout: post
 title:  "Java开发中的编码研究(1)"
 date:   2016-10-06 21:00:00
 categories: java web
-tags: featured
 image: /assets/article_images/2016-10-06/desktop.JPG
 image2: /assets/article_images/2016-10-06/desktop.JPG
 ---

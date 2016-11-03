@@ -3,18 +3,15 @@ gems:
   - jemoji
   - jekyll-paginate
 
-# Site settings
 title: "胡杨的个人博客"
 headline: "木易沙鸥"
 description: 
-   <br>“博学笃志 格物明德”<br>做个拥有求知欲的小白
+   <br>“博学笃志 格物明德”<br>做个充满求知欲的小白
    
 
 email: "ihuyang@hotmail.com"
 weibo: "@huhu_Lucky"
-#blog logo
 logo: "/assets/images/logo.jpg"
-# blog cover
 cover: "/assets/images/index_bgimg.jpg"
 wechat_code: "/assets/images/wechat_code.JPG"
 
@@ -26,13 +23,10 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://ihuyang.me" # the base hostname & protocol for your site
+url: "http://ihuyang.me"
 baseurl: ""
 #设置博文的url格式
 permalink: /:categories/:title.html
-#used to display twitter cards
-twitter_handle: '@dirkfabisch'
-
 
 #weibo
 weibo_icon:	"/assets/images/weibo.png"
