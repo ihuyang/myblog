@@ -3,8 +3,8 @@ layout: post
 title:  "内存缓存的一种典型实现"
 date:   2016-09-24 22:00:00
 categories: java web
-image: /assets/article_images/2016-09-24/night-track.JPG
-image2: /assets/article_images/2016-09-24/night-track-mobile.JPG
+image: /assets/article_images/2016-09-24/2016-09-24_desktop.jpg
+image2: /assets/article_images/2016-09-24/2016-09-24_desktop.jpg
 ---
 ### *摘要*
 >　　缓存技术作为一种可以有效加快数据读取速度的机制，被广泛应用于各类应用场景中，以提高运行效率，比如CPU寄存器的指令缓存、数据库缓存等等。在我之前的一项工作里，我需要在程序中随时读取整个项目的数据字典，而数据字典与其他数据一样存储于数据库中，频繁读写消耗大，因此我选择了内存缓存的方式去实现这个需求。

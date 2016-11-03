@@ -4,8 +4,8 @@ title:  "利用Spring AOP实现系统日志"
 date:   2016-10-22 14:00:00
 categories: java web
 tags: featured
-image: /assets/article_images/2016-10-22/title_img.jpg
-image2: /assets/article_images/2016-10-22/title_img.jpg
+image: /assets/article_images/2016-10-22/2016-10-22_desktop.jpg
+image2: /assets/article_images/2016-10-22/2016-10-22_desktop.jpg
 ---
 ### *摘要*
 >　　我们可能都非常熟悉大名鼎鼎的OOP（面向对象编程），但却不一定清楚与它同为软件设计思想的AOP。从名称上来看，它们很相似，但两种设计思想在目标上却有着本质的区别。当前广泛被采用的开源框架Spring拥有两个重要的特征，一个是控制反转，另一个就是支持AOP编程，那么AOP到底是什么，它又能为我们的程序带来什么？
