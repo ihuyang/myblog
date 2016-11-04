@@ -4,14 +4,6 @@ title: About
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+>　　这里是胡杨的个人博客，在这里，我会将日常工作和学习中值得记录的个人所得写下来，分享于此。由于能力和技术范畴的限制，难免在文笔或专业描述上存在缺陷，希望大家谅解，也欢迎大家与我联系，共同交流。
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
-
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+>　　小站初建，功能可能还不够完善，但我会在后续计划中逐步开放，比如博文的评论功能（目前暂只有分享）。

@@ -27,10 +27,10 @@
         <div class="noarticleimage">
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
-            <div class="cf post-meta-text">
+            <!--<div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ page.author_image }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author_cn }}&nbsp;{{ site.author_en }}</h4>
-            </div>
+            </div>-->
           </div>
         </div>
         <br>
@@ -39,8 +39,8 @@
         {% endif %}
         <section class="post-content">
           <a name="topofpage"></a>
-          <!--{{content}}-->
-		  <div class="bottom-teaser cf">
+          {{content}}
+		  <!--<div class="bottom-teaser cf">
 		  <div class="isLeft">
 		    <section class="author">
               <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
@@ -56,8 +56,28 @@
               <section class="poweredby">Email:&nbsp;&nbsp;{{ site.email }}<br>Weibo:&nbsp;&nbsp;{{ site.weibo }}</section>
             </footer>
           </div>
-		  </div>		  
+		  </div>-->		  
         </section>
+		 <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <section class="author">
+              <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
+              <h4>{{ site.author_cn }}&nbsp;{{ site.author_en }}</h4>
+			  <br/>
+              <p class="bio">{{site.author_info}}</p>
+            </section>
+          </div>
+          {{/post}}
+          <div class="isRight">
+            <footer class="site-footer">
+              <section class="poweredby">Email:&nbsp;&nbsp;{{ site.email }}<br>Weibo:&nbsp;&nbsp;{{ site.weibo }}</section>
+              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> RSS订阅</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="mailto:{{ site.email }}">{{ site.author_en }}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
       </article>
     </main>
     <div class="bottom-closer">
