@@ -42,7 +42,7 @@ image2: /assets/article_images/2016-10-22/2016-10-22_desktop.jpg
 
 　　回想一下，我们在之前是如何实现系统日志功能的？一般情况下，都是在需要记录日志的时候，直接使用语句logger.info或logger.error来完成，因此这些日志语句就穿插于各项业务的逻辑代码中。编写的时候可能觉得这并没有什么，但是这对于一名后期维护人员就很头疼了，因为这些日志语句可能毫无规律，它们不整块出现，使用时就一条语句，还藏在大量的无关代码中，要找到它们并更新它们就变得非常困难。因此，日志管理就非常适合使用AOP去实现，在接下来的示例程序中，我将简单展示如何在Spring MVC里使用AOP去实现系统的日志管理，这里我采用的是全注解的实现方式。
 
-　　首先是在Spring的配置文件applicationContext.xml中开启自动代理，这样Spring容器才会为使用了@Aspect注解的切面类创建代理，代码如下：
+　　首先是在Spring的配置文件applicationContext.xml中开启自动代理，这样Spring容器就会为使用了@Aspect注解的切面类创建代理，代码如下：
 	
 	<!-- 激活自动代理 -->
 	<aop:aspectj-autoproxy proxy-target-class="true"/>
